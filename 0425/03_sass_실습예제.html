@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03_sass_실습예제</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/tab.css">
+  <script src="./js/tab.js"></script>
+</head>
+<body>
+  <h2>제이쿼리-SASS를 활용한 탭 콘텐츠 구현</h2>
+  <p>css확장언어인 SASS를 활용해 메뉴 클릭시 이미지 변경되는 콘텐츠 구현하기</p>
+
+  <div class="tab-menu">  
+    <div id="tab1" class="tab-content active">
+      <img src="./img/img1.png" alt="이미지1">
+    </div>
+    
+    <div id="tab2" class="tab-content">
+      <img src="./img/img2.png" alt="이미지2">
+    </div>
+    <div id="tab3" class="tab-content">
+      <img src="./img/img3.png" alt="이미지3">
+    </div>
+    
+    <ul>
+      <li class="active"><a href="#tab1">봄 날씨좋다 산책 나가고 싶다</a></li>
+      <li><a href="#tab2">키야 경치 좋다 휴양하러 가고싶다</a></li>
+      <li><a href="#tab3">멍때리기 좋다</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

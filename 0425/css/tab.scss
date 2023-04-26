@@ -1,0 +1,58 @@
+$margin:0px auto;
+$padding:0px;
+$border:3px double #000;
+$inlineB:inline-block;
+
+
+ul li{
+  list-style: none;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.tab-menu{
+  width: 1000px;
+  margin: $margin;
+  padding: $padding;
+  display: flex;
+  border: $border;
+
+  .tab-content{
+    display: none;
+    img{
+      display: block;
+      width:100%;
+      box-sizing: border-box;
+    }
+  }
+  ul {
+    display: $inlineB;
+    width: 50%;
+    margin: $margin;
+    padding: $padding;
+  }
+  li{
+    display: block;
+    height: 33.3%;
+  }
+  li a{
+    display: block;
+    text-align: center;
+    line-height: 133px;
+  }
+}
+
+.tab-menu ul li.active  {
+  color: #fff;
+  background-color: #166da7;
+}
+
+.tab-content.active {
+  display: $inlineB;
+  width:80%;
+}
+
+
+

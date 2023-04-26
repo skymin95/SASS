@@ -1,0 +1,31 @@
+$padding:10px;
+$margin:10px;
+
+.list{
+  h3{
+    padding: $padding;
+    margin: $margin;
+    border: 1px solid #f0f;
+    font: {
+      family:'궁서체';
+      size:30px;
+      weight:bold;
+      style:italic;
+    }
+  }
+  ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  li{
+    padding: $padding;
+    margin: $margin;
+    border: 1px solid #f00;
+    
+  }
+  a{
+    text-decoration: none;
+    color: #00f;
+  }
+}

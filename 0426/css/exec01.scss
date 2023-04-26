@@ -1,0 +1,200 @@
+// exec01.scss
+*{
+  margin: 0px auto;
+  padding: 0px;
+}
+ul li{
+  list-style: none;
+}
+
+// 크기
+$pc:1025px;
+$tablet:768px;
+$mobile:767px;
+$li-w:280px;
+$li-h:270px;
+
+$m_top:10px;
+
+// 컬러
+$h_Color: #93D3DD;
+$g_Color: #C1DB82;
+$cont_Color1:#F3A285; 
+$cont_Color2: #88C896;
+$f_Color: #F7E293;
+
+@mixin flex{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+// pc
+@media screen and (min-width:1025px){
+  .wrap{
+    margin: 0px auto;
+    width: $pc;
+  
+    header{
+      background: $h_Color;
+      height: 123px;
+    }
+    .visual{
+      background:$g_Color;
+      height: 300px;
+      margin-top: $m_top;
+    }
+    .cont01{
+      @include flex;
+      margin-top: $m_top;
+    li{
+      width: $li-w;
+      height:$li-h;
+      background: $cont_Color1;
+    }
+    li:nth-child(2){
+      width: 380px;
+      height: $li-h;
+    }
+    }
+  
+    .cont02{
+      @include flex;
+      margin-top: $m_top;
+    li{
+      width: $li-w;
+      height:$li-h;
+      background: $cont_Color2;
+    }
+    li:nth-child(2){
+      width: 380px;
+      height: $li-h;
+    }
+    }
+  
+    footer{
+      height: 110px;
+      background: $f_Color;
+      margin-top: $m_top;
+    }
+  }
+
+}
+
+// tablet
+@media screen and (min-width:768px) and (max-width:1024px){
+  .wrap{
+    margin: 0px auto;
+    width: $tablet;
+  
+    header{
+      background: $h_Color;
+      height: 123px;
+    }
+    .visual{
+      background:$g_Color;
+      height: 300px;
+      margin-top: $m_top;
+    }
+    .cont01{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: $m_top;
+    li{
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #fff;
+      height:$li-h;
+      background: $cont_Color1;
+    }
+    li:last-child{
+      width: 100%
+    }
+    }
+  
+    .cont02{
+      display: flex;
+      flex-wrap: wrap;
+      // gap: 10px;
+      justify-content: center;
+      margin-top: $m_top;
+    li{
+      width: 50%;
+      box-sizing: border-box;
+      border: 3px solid #fff;
+      height:$li-h;
+      background: $cont_Color2;
+    }
+    li:last-child{
+      width: 100%
+    }
+    }
+  
+    footer{
+      height: 110px;
+      background: $f_Color;
+      margin-top: $m_top;
+    }
+  }
+
+}
+
+// mobile
+@media screen and (max-width:767px){
+  .wrap{
+    margin: 0px auto;
+    width: $mobile;
+  
+    header{
+      background: $h_Color;
+      height: 80px;
+    }
+    .visual{
+      background:$g_Color;
+      height: 150px;
+      margin-top: $m_top;
+    }
+    .cont01{
+      justify-content: center;
+      margin-top: $m_top;
+    li{
+      width: 100%;
+      box-sizing: border-box;
+      border: 3px solid #fff;
+      height:$li-h;
+      background: $cont_Color1;
+    }
+    li:last-child{
+      width: 100%
+    }
+    }
+    .cont02{
+      // display: flex;
+      // gap: 10px;
+      justify-content: center;
+      margin-top: $m_top;
+    li{
+      width: 100%;
+      box-sizing: border-box;
+      border: 3px solid #fff;
+      height:$li-h;
+      background: $cont_Color2;
+    }
+    li:last-child{
+      width: 100%
+    }
+    }
+  
+    footer{
+      height: 110px;
+      background: $f_Color;
+      margin-top: $m_top;
+    }
+  }
+
+}
+
+
+
+
+

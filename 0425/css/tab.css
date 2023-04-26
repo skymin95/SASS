@@ -1,0 +1,49 @@
+ul li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.tab-menu {
+  width: 1000px;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  border: 3px double #000;
+}
+.tab-menu .tab-content {
+  display: none;
+}
+.tab-menu .tab-content img {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.tab-menu ul {
+  display: inline-block;
+  width: 50%;
+  margin: 0px auto;
+  padding: 0px;
+}
+.tab-menu li {
+  display: block;
+  height: 33.3%;
+}
+.tab-menu li a {
+  display: block;
+  text-align: center;
+  line-height: 133px;
+}
+
+.tab-menu ul li.active {
+  color: #fff;
+  background-color: #166da7;
+}
+
+.tab-content.active {
+  display: inline-block;
+  width: 80%;
+}/*# sourceMappingURL=tab.css.map */

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASS 학습목차</title>
+  <style>
+    *{padding:0px;margin:0px;}
+    body{
+      font-family:"맑은 고딕",arial,sans-serif;
+      font-size:12px;
+      color:#333;
+    }
+    h1{
+      text-align:center;
+      padding:16px 0px;
+      font-size:20px
+    }
+    h1 img{height:60px;}
+    .title01{
+      text-align:center;
+      margin-top:6px;
+    }
+    .border01{
+      border-top:3px solid #b662b9;
+      border-bottom:3px solid #b662b9;
+    }
+    .bgcolor01{background:#d484d7;}
+    main{margin-bottom:10px;}
+    dl{
+      margin:0px 5px;
+      overflow:hidden;
+    }
+    dt{
+      font-size:14px;     
+      color:#ffffff;
+      padding:12px 0px;
+      font-weight:bold;
+      text-indent:10px;
+      border-bottom:1px solid #fff;
+    }
+    dl dt:last-of-type{border:none;}
+    dd{
+      background:rgb(238, 238, 238);
+      border-bottom:1px solid #ccc;
+      /* overflow:hidden; */
+    }
+    dd > a{
+      font-size:13px;
+      line-height:40px;
+      color:#333;
+      text-decoration:none;
+      text-indent:20px;
+      display:block;
+      transition:0.3s;
+    }
+    dd > a:hover{
+      font-weight:bold;
+      
+    }
+    i.fa-angle-down{
+      color:#fff;
+      font-size:16px;
+      float:right;
+      padding:0px 10px;
+    }
+    footer{
+      line-height:50px;
+      text-align:center;
+      background:#333;
+    }
+    footer > address{
+      font-style:normal;
+      color:#fff;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1><img src="./logo.svg" alt="sass로고"></h1>
+  </header>
+
+  <main>
+    <dl class="border01">
+      <dt class="bgcolor01">1일차 - SASS소개와 문법, 믹싱기법<i class="fas fa-angle-down"></i></dt>
+      <dd><a href="/0424/01_sass소개와 문법.html" title="소개와 문법">sass소개와 문법, live sass compiler</a></dd>
+      <dd><a href="/0424/02_sass문법-믹싱기법(mixin, include).html" title="">@mixin, @include</a></dd>
+
+      <dt class="bgcolor01">2일차 - 변수의 개념, 중첩규칙<i class="fas fa-angle-down"></i></dt>
+      <dd><a href="/0425/01_sass_변수개념.html" title="변수">변수의 선언과 활용</a></dd>
+      <dd><a href="/0425/02_sass_중첩규칙.html" title="중첩">중첩규칙(nesting)</a></dd>
+      <dd><a href="/0425/03_sass_실습예제.html" title="삽입">실습예제</a></dd>
+      <dd><a href="/0425/04_sass_import(외부sass삽입).html" title="삽입">import(외부sass삽입)</a></dd>
+      <dd><a href="/0425/05_sass_실습예제2.html" title="삽입">실습예제2</a></dd>
+
+      <dt class="bgcolor01">3일차 - 함수, if문, 반복문(for, while)<i class="fas fa-angle-down"></i></dt>
+      <dd><a href="/0426/01_sass함수문법.html" title="함수">함수(@function)</a></dd>
+      <dd><a href="/0426/02_sass함수문법(if문).html" title="조건문">조건문(@if, @else, @else if)</a></dd>
+      <dd><a href="/0426/04_sass함수문법(반복문과 배열).html" title="반복문">반복문(@for, @while)</a></dd>
+      <dd><a href="/0426/03_sass실습예제.html" title="반복문">실습예제</a></dd>
+    </dl>
+  </main>
+
+  <footer>
+    <address>
+      Copyright&copy;2023 SASS allrights reserved.
+    </address>
+  </footer>
+</body>
+</html>

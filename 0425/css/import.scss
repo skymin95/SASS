@@ -1,0 +1,9 @@
+//import.scss파일
+// 스타일에 있는 변수 가져올수 있음
+@import 'style';
+
+h2{
+font-size: $bigFontSize;
+color: $baseFontColor;
+background:$bgcolor;
+}
